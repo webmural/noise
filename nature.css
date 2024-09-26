@@ -1,0 +1,70 @@
+/*
+opensource color reef
+https://s9a.page/reef
+*/
+
+.reef * {
+  background-color: transparent;
+  color: inherit;
+}
+
+.reef.reef {
+  background-color: var(--reef);
+  color: var(--free);
+}
+
+.tide.tide {
+  color: var(--reef);
+  background-color: var(--free);
+}
+
+.reef ::selection {
+  background-color: violet;
+  color: midnightblue;
+}
+
+.tide ::selection {
+  background-color: powderblue;
+  color: mediumblue;
+}
+
+.clam.clam,
+.clam [class] {
+  color: transparent;
+}
+
+.brine { filter: hue-rotate(-120deg) }
+.trine { filter: hue-rotate(120deg) }
+
+.flap { border-color: currentColor; }
+.sponge { border-color: transparent; }
+:root { --free: #302; --reef: aqua; }
+.reef [href] { --free: aquamarine; --reef: indigo; }
+.wrasse [href] { --free: aqua; --reef: rebeccapurple; }
+.coral.coral { --free: #302; --reef: coral; }
+.dream.dream { --free: aqua; --reef: rebeccapurple; }
+.stony.stony { --free: silver; --reef: indigo; }
+.wrasse.wrasse { --free: aquamarine; --reef: indigo; }
+
+
+/*
+iffy◒
+s9a.page/iffy color typhoon
+webmural.com/iffy thxyz hue
+*/
+.iyff {filter:hue-rotate(-288deg)}
+.ffiy {filter:hue-rotate(288deg)}
+.ffyi {filter:hue-rotate(144deg)}
+.yiff {filter:hue-rotate(-144deg)}
+.iffy {fill:var(--iffy);stroke:var(--yffi)}
+.yffi {fill:var(--yffi);stroke:var(--iffy)}
+.iffy.iffy {background-color:var(--iffy);color:var(--yffi)}
+.yffi.yffi {background-color:var(--yffi);color:var(--iffy)}
+.iffy ::selection {color:var(--iffy);background:var(--else)}
+.yffi ::selection {color:var(--yffi);background:var(--else)}
+.iffy *{background-color:transparent;color:unset;--else:aquamarine}
+.yffi *{background-color:transparent;color:unset;--else:dodgerblue}
+*{--iffy:darkviolet;--yffi:lemonchiffon}
+@media (prefers-color-scheme:dark){*{--yffi:khaki}}
+@media (prefers-contrast:more){*{--iffy:indigo}}
+@media (prefers-contrast:less){*{--yffi:peachpuff}}
